@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Inventario</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="main">
+            <h1>Inventario de Equipo y Comida</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="Register.html">Registrarte</a></li>
+                <li><a href="Login.html">Log In</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <section id="LoginSection">
+
+                <article>
+
+                    <h2>Bienvenido</h2>
+
+                    <form action="/action_page.php">
+                        <div class="imgcontainer">
+                            <img src="img/user.png" alt="Avatar" class="avatar" width="150">
+                        </div>
+
+                        <div class="container">
+                            <label><b>Correo</b></label>
+                            <input type="text" placeholder="Ingresar correo" name="uname" required>
+
+                            <label><b>Contraseña</b></label>
+                            <input type="password" placeholder="Ingresar contraseña" name="psw" required>
+
+                            <input class="enter" type="button" value="Ingresar" onClick="doSomething(this.form)">
+
+                            <script language="javascript">
+                                
+                                function doSomething(form) {
+                                    if (form.uname.value == "admin") {
+                                        if (form.psw.value == "admin") {
+                                            location = "Comida.html"
+                                        } else {
+                                            alert("Contraseña Invalida")
+                                        }
+                                    } else {
+                                        alert("Usuario Invalido")
+                                    }
+
+                                }
+
+                            </script>
+
+                            <input type="checkbox" checked="checked"> Recordarme
+                        </div>
+
+                    </form>
+
+                </article>
+
+            </section>
+
+
+
+        </main>
+
+        <div class="clearfix"></div>
+
+        <footer>
+            <details>
+                <summary>Copyright &copy; 2017, Sitio HTML</summary>
+                <p> - by Calos Solis. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the company Solis Enterprises.</p>
+            </details>
+        </footer>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

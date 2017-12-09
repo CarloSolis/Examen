@@ -1,0 +1,406 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.hImg {
+
+    display: block;
+    margin-left: 200px;
+
+}
+
+
+/* ==========================================================================
+	Author's custom styles
+========================================================================== */
+
+body {
+    font-family: arial;
+    font-size: 13px;
+    background: #715555;
+    text-align: justify;
+
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+
+}
+
+#container {
+    width: 85%;
+    background: #fff;
+    margin: 19px auto;
+    overflow: auto;
+    border-radius: 10px;
+
+}
+
+header#main {
+    padding: 10px;
+    background: #d9ca50;
+
+}
+
+nav {
+    height: 40px;
+    background: #333333;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    padding: 10px 10px 0px 10px;
+
+}
+
+nav li .right{
+    
+    float: right;
+    
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    color: red;
+}
+
+main {
+    padding: 20px;
+
+
+}
+
+
+section#main {
+    width: 70%;
+    float: left;
+
+}
+
+aside {
+    width: 20%;
+    float: right;
+}
+
+
+footer {
+    padding: 10px;
+    text-align: center;
+
+}
+
+/* ==========================================================================
+	Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 600px) {
+
+    section#main,
+    aside {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+
+/* ==========================================================================
+	Helper classes
+========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+	Print styles
+========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    form {
+        border: 3px solid #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+
+
+
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.enter {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.enter:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.LoginSection{
+    
+    align-content: center;
+    
+}
