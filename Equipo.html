@@ -28,7 +28,7 @@
                 var quantity = document.getElementById("quantTxt").value;
                 var every = "/Equipo/ ----- Nombre: " + food + " ----- Valor: " + val + " ----- Cantidad: " + quantity;
                 /*Guardando los datos en el LocalStorage*/
-                localStorage.setItem("equipo", every);
+                localStorage.setItem("Equipo", every);
                 /*Limpiando los campos o inputs*/
                 document.getElementById("namTxt").value = "";
                 document.getElementById("valTxt").value = "";
@@ -36,9 +36,11 @@
 
                 alert(food + " fue agregado con exito")
 
+                
+                
             });
         });
-
+        
     </script>
 
 </head>
@@ -63,9 +65,7 @@
 
             <section id="main">
 
-                Nombre: <input type="text" name="name" id="namTxt"><br><br> 
-                Valor: <input type="text" name="valor" id="valTxt"><br><br> 
-                Cantidad: <input type="text" name="cantidad" id="quantTxt"><br><br>
+                Nombre: <input type="text" name="name" id="namTxt"><br><br> Valor: <input type="text" name="valor" id="valTxt"><br><br> Cantidad: <input type="text" name="cantidad" id="quantTxt"><br><br>
 
                 <button id="btn1">Ingresar</button>
 

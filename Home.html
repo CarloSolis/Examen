@@ -16,18 +16,30 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     <script>
-       
         window.onload = function() {
             for (var i = 0, len = localStorage.length; i < len; i++) {
                 var key = localStorage.key(i);
                 var value = localStorage[key];
-                var p2 = "<p>"+ value +"</p>";
+                var p2 = "<p>" + value + "</p>";
                 document.getElementById("foodPre").insertAdjacentHTML('beforebegin', p2);
             }
         }
 
     </script>
 
+    <script>
+        $(document).ready(function() {
+
+            $('#clear').click(function() {
+
+
+
+                alert("Fue eliminado con exito")
+
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -58,8 +70,11 @@
 
                     <p id="foodPre"></p>
 
+                    <hr>
 
                 </article>
+
+                <button id="clear">Limpiar Equipo</button>
 
             </section>
 
