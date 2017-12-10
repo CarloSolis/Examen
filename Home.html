@@ -37,6 +37,18 @@
       }
 
     </script>
+    
+    <script>
+      function DeleteC(){
+          
+          localStorage.removeItem('food');
+          
+          alert("Comida Eliminado");
+          
+      }
+
+    </script>
+    
 </head>
 
 <body>
@@ -71,7 +83,8 @@
 
                 </article>
 
-                <button id="clear" onclick="Delete()">Limpiar Equipo</button>
+                <button id="clearE" onclick="Delete()">Limpiar Equipo</button>
+                <button id="clearC" onclick="DeleteC()">Limpiar Comida</button>
 
             </section>
 
