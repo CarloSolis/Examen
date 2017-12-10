@@ -17,27 +17,22 @@
     <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <script>
-       
         /*Funcion de Capturar, Almacenar datos y Limpiar campos*/
-        $(document).ready(function() {
+        function Agregar() {
+            /*Captura de datos escrito en los inputs*/
+            var food = document.getElementById("namTxt").value;
+            var val = document.getElementById("valTxt").value;
+            var quantity = document.getElementById("quantTxt").value;
+            var every = "/Comida/ ----- Nombre: " + food + " ----- Valor: " + val + " ----- Cantidad: " + quantity;
+            /*Guardando los datos en el LocalStorage*/
+            localStorage.setItem("food", every);
+            /*Limpiando los campos o inputs*/
+            document.getElementById("namTxt").value = "";
+            document.getElementById("valTxt").value = "";
+            document.getElementById("quantTxt").value = "";
 
-            $('#btn1').click(function() {
-                /*Captura de datos escrito en los inputs*/
-                var food = document.getElementById("namTxt").value;
-                var val = document.getElementById("valTxt").value;
-                var quantity = document.getElementById("quantTxt").value;
-                var every = "/Comida/ ----- Nombre: " + food + " ----- Valor: " + val + " ----- Cantidad: " + quantity;
-                /*Guardando los datos en el LocalStorage*/
-                localStorage.setItem("food", every);
-                /*Limpiando los campos o inputs*/
-                document.getElementById("namTxt").value = "";
-                document.getElementById("valTxt").value = "";
-                document.getElementById("quantTxt").value = "";
-
-                alert(food + " fue agregado con exito")
-
-            });
-        });
+            alert(food + " fue agregado con exito")
+        }
 
     </script>
 
@@ -62,11 +57,9 @@
 
             <section id="main">
 
-                Nombre: <input type="text" name="name" id="namTxt"><br><br> 
-                Valor: <input type="text" name="valor" id="valTxt"><br><br> 
-                Cantidad: <input type="text" name="cantidad" id="quantTxt"><br><br>
+                Nombre: <input type="text" name="name" id="namTxt"><br><br> Valor: <input type="text" name="valor" id="valTxt"><br><br> Cantidad: <input type="text" name="cantidad" id="quantTxt"><br><br>
 
-                <button id="btn1">Ingresar</button>
+                <button id="btn1" onclick="Agregar()" >Ingresar</button>
 
             </section>
 
