@@ -28,16 +28,13 @@
     </script>
 
     <script>
-        $(document).ready(function() {
-
-            $('#clear').click(function() {
-
-
-
-                alert("Fue eliminado con exito")
-
-            });
-        });
+      function Delete(){
+          
+          localStorage.clear;
+          
+          alert("Hola");
+          
+      }
 
     </script>
 </head>
@@ -74,7 +71,7 @@
 
                 </article>
 
-                <button id="clear">Limpiar Equipo</button>
+                <button id="clear" onclick="Delete()">Limpiar Equipo</button>
 
             </section>
 
